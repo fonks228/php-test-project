@@ -10,9 +10,31 @@
             font-size: 12px;
         }
     </style>
-    <ul>
-        <li>sf</li>
-        <li>sefs</li>
+    <ul>Tips:
+        <li>The WAN IP should be a public IP address. For the WAN IP is assigned dynamically by the ISP, it is recommended to <br>
+            apply and register a domain name for the WAN referring to <a href="">Make Applications Free from Port Restriction by DMZ.</a><br>
+            Then users on the internet can use http:// domain name to visit the website.</li>
+        <li>If you have changed the default External Port, you should use http:// WAN IP: External Port or http:// domain name: <br>
+            External Port to visit the website.</li>
     </ul>
+            <h2><pre style="color: rgb(1, 136, 226);">10. 2.	 Open Ports Dynamically by Port Triggering </pre></h2><br>
+                Port Triggering can specify a triggering port and its corresponding external ports.<br>
+                When a host on the local network initiates a connection to the triggering port, all the<br>
+                external ports will be opened for subsequent connections. The router can record the <br>
+                IP address of the host. When the data from the internet return to the external ports, the<br>
+                router can forward them to the corresponding host. Port Triggering is mainly applied to<br>
+                online games, VoIPs, video players and common applications including MSN Gaming<br>
+                Zone, Dialpad and Quick Time 4 players, etc.<br>
+                <br>
+                Follow the steps below to configure the Port Triggering rules:<br>
+                <br>
+                <ol>
+                    <li>Visit <a href="http://tplinkwifi.net">http://tplinkwifi.net</a>, and log in with your TP-Link ID or the password you set for<br>
+                        the router.<br>
+                        <br></li>
+                <li>o to Advanced > NAT Forwarding > Port Triggering and click<!--зделать картинку с плюсиком и add, и ищо картинку ниже--> <br></li>
+                <li>Click VIEW COMMON SERVICES, and select the desired application. The Triggering<br>
+                    Port, Triggering Protocol and External Port will be automatically filled in. The following<br>
+                    picture takes application MSN Gaming Zone as an example.</li>
     </body>
 </html>
