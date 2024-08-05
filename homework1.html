@@ -1,31 +1,91 @@
-<html >
-<title>homework</title>
-<body>
-<meta charset="UTF-8">
-<style>
-    table, ht, td {
-        border: 1px solid black;
-    }
-</style>
+<html>
+<head>
+    <title>homework</title>
+    <meta charset="UTF-8"/>
+    <style>
+        table, ht, td {
+            border: 1px solid #000000;
+        }
 
-<table style="width:100%; height: 100%;">
+        .selectOption {
+            width: 60%;
+        }
+        .td1{
+            border: none; padding-top: 20%;
+        }
+        .td2{
+            border: none;
+        }
+        .td3{
+            text-align: right;border: none;
+        }
+        .td4{
+            vertical-align: baseline;
+        }
+        .tr{
+            background-color:#fadc98
+        }
+        .table {
+             width:100%; height: 100%;
+        }
+        .table1 {
+            width:100%; height: 5%;border: none
+        }
+        .span {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<table class="table">
     <tr>
-        <td>глвное</td>
-        <td rowspan="5" style="vertical-align: baseline;">
-            <table style="width:100%; height: 5%; border: none;">
-                <td style="text-align:center; border: none;"> см. также <br><br>
-            проведения документов<br><br>
+        <td>главное</td>
+        <td rowspan="5" class="td4">
+            <table class="table1">
+                <tr>
+                    <td colspan="2" class="td3">
+                        <select class="selectOptiond">
+                            <option>Поиск (Ctrl + F)  </option>
+                        </select>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.wLQ7p_RekLjz-DsCUnDxGgAAAA%26pid%3DApi&f=1&ipt=3f5063982fc59fca636092d977485bad6ea6f63b58820499b742a8ba367a015c&ipo=images" alt=""style="padding-left: 5px; padding-right: 5px; width: 20px; height: 20px;">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-jmrbdsKfaRDy4YqOxdG5QHaHa%26pid%3DApi&f=1&ipt=02debd2e4f82a4e3c887e7244091ef2d7d6c4978e3127d34346d45eab701ac4c&ipo=images" alt=""style="width: 23px; height: 23px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        план счетов<br><br>
+                    </td>
+                    <td class="td1">
+                        см. также
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td2">
+                        виды субконто<br><br>
+                    </td>
+                    <td class="td2">
+                            <span class="span">
+                                проведения документов
+                            </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td2">
+                        парамитры учета
+                    </td>
+                </tr>
             </table>
-            план счетов<br><br>
-        виды субконто<br><br>
-        парамитры учета
         </td>
     </tr>
+    <tr class="tr">
         <td>справочники</td>
     </tr>
-    <td>документы</td>
-    <tr>
+    <tr class="tr">
+        <td>документы</td>
     </tr>
-    <td>отчёты</td>
+    <tr class="tr">
+        <td>отчёты</td>
+    </tr>
+</table>
 </body>
 </html>
