@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>homework2</title>
     <style>
+        .nested-left-block {
+            position: absolute;
+
+        }
+        .nested-right-block{
+            position: absolute;
+            right: 20%;
+
+        }
+        .div-select{
+            text-align: right  ;
+        }
+        .select{
+            width:142px ;
+            height:19px;
+        }
         .example-block {
             border: 1px solid red;
             width: 500px;
@@ -25,31 +41,44 @@
         .right-block {
             position: absolute;
             display: block;
-            width: 79%;
+            width: 39.5%;
             left: 20%;
-            text-align: right;
+            height: 100%;
+            top: 19px;
+        }
+        .right-block1 {
+            position: absolute;
+            display: block;
+            width: 39.5%;
+            left: 59.5%;
+            /*text-align: right;*/
             height: 100%;
         }
         body{
             margin: 0;
-            padding: 0;
+            padding:0;
             width: 100%;
             height: 100%;
         }
         .hidden {
-            background-color: #ccc;
+            background-color: #fff097;
             width: 100%;
-            height: 20%;
+            height: 26.65%;
+            text-align: center;
         }
         .hidden1 {
-            background-color: #ccc;
+            background-color: #ffffff;
             width: 100%;
-            height: 20%;
+            height: 24.45%;
+            right: 20px;
+            text-align: left;
+
         }
         .hidden2 {
             background-color: #eaeaea;
             width: 100%;
             height: 20%;
+            text-align: center;
         }
     </style>
 </head>
@@ -57,39 +86,51 @@
 
 <div class="left-block">
     <div class="hidden2">
-        главная
+        Главная
     </div>
     <div class="hidden">
-        справачники
+        Справачники
     </div >
     <div class="hidden">
-        документи
+        Документи
     </div >
     <div class="hidden">
-        отчёти
+        Отчёты
     </div >
 </div>
-<div class="right-block">
-    <div class="hidden1">
-        jserhgklushre
+<div class="right-block1">
+    <div class="div-select">
+        <select class="select">
+            <option>
+                Поиск (Ctrl+F)
+            </option>
+        </select>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Rjm437bIKQqjn6C8BSBhugAAAA%26pid%3DApi&f=1&ipt=3850c4ce3698721f500b4719b75c93aeb67c81764a611ea1a2aaa23938705ab6&ipo=images" alt=""style="width:25px; height: 25px">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-jmrbdsKfaRDy4YqOxdG5QHaHa%26pid%3DApi&f=1&ipt=10bf61ddb187b1e1170f8388a9dd7841bbb6e0d328d1547a91e99464fad8c440&ipo=images" alt=""style="width:25px; height: 25px">
     </div>
-    <div class="hidden1">
-        jserhgklushre
-    </div >
-    <div class="hidden1">
+</div>
+
+<div class="right-block">
+    <div class="nested-left-block">
+        <div class="">
+            План счетов
+        </div>
+        <div class="">
+            Види субконто
+        </div>
+        <div class="">
+            Параметры учета
+        </div>
+    </div>
+    <div class="nested-right-block">
+        <div>
+            См. также
+        </div>
+        <div >
+            Проведения документа
+        </div>
 
     </div>
-    <div class="hidden1">
-        ыявыаыфа
-    </div >
-    <div class="hidden1">
-        ыявыаыфа
-    </div >
 </div>
-<!--<div class="example-block">-->
-<!--    <div class="example-absolute">-->
-<!--        test absolute-->
-<!--    </div>-->
-<!--</div>-->
 </body>
 </html>

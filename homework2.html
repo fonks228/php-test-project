@@ -3,54 +3,97 @@
 
     <meta charset="UTF-8">
     <title>homework2</title>
+    <style>
+        .example-block {
+            border: 1px solid red;
+            width: 500px;
+            height: 500px;
+        }
+        .example-absolute {
+            position: relative;
+            top: 80%;
+            left: 10%;
+            color: white;
+            background-color: black;
+        }
+        .left-block {
+            position: absolute;
+            display: block;
+            width: 20%;
+            height: 100%;
+        }
+        .right-block {
+            position: absolute;
+            display: block;
+            width: 79%;
+            left: 20%;
+            /*text-align: right;*/
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .hidden {
+            background-color: #fff097;
+            width: 100%;
+            height: 26.65%;
+            text-align: center;
+        }
+        .hidden1 {
+            background-color: #a1a1a1;
+            width: 100%;
+            height: 25%;
+        }
+        .hidden2 {
+            background-color: #eaeaea;
+            width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-<style>
-    .hidden {
-        display: inline-block;
-        background-color: #ccc;
-        width: 20%;
-        height: 20%;
-        padding: 20px;
-    }
-    .hidden1 {
-        display: inline-block;
-        background-color: #ccc;
-        width: 72%;
-        height: 20%;
-        padding: 20px;;
-    }
-    .hidden2 {
-        display: inline-block;
-        background-color: #eaeaea;
-        width: 20%;
-        height: 20%;
-        padding: 20px;
-    }
-</style>
-<div class="hidden2">
-    главная
-</div >
-<div class="hidden1">
-    jserhgklushre
+
+<div class="left-block">
+    <div class="hidden2">
+        главная
+    </div>
+    <div class="hidden">
+        справачники
+    </div >
+    <div class="hidden">
+        документи
+    </div >
+    <div class="hidden">
+        отчёти
+    </div >
 </div>
-<div class="hidden">
-    jserhgklushre
-</div >
-<div class="hidden1">
-    jserhgklushre
-</div >
-<div class="hidden">
-    jserhgklushre
-</div >
-<div class="hidden1">
-    jserhgklushre
+<div class="right-block">
+    <div class="hidden1">
+        план счетов <br>
+        види субконто<br>
+        параметры учета
+    </div>
+    <div class="hidden1">
+
+    </div >
+    <div class="hidden1">
+
+    </div>
+    <div class="hidden1">
+
+    </div >
+    <!--    <div class="hidden1">-->
+    <!--        -->
+    <!--    </div >-->
 </div>
-<div class="hidden">
-    jserhgklushre
-</div >
-<div class="hidden1">
-    jserhgklushre
-</div >
+<!--<div class="example-block">-->
+<!--    <div class="example-absolute">-->
+<!--        test absolute-->
+<!--    </div>-->
+<!--</div>-->
 </body>
 </html>
