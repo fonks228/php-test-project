@@ -1,13 +1,68 @@
 <html>
-<title>homework3</title>
-<meta charset="UTF-8">
-<body>
-<form action="https://youtube.com/">
-    <label for="fname">login  or email:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">password:</label><br>
-    <input type="text" id="lname" name="lname"><br><br>
-    <input type="submit" value="Отправить">
-<form>
+<head>
+    <title>homework3</title>
+    <meta charset="UTF-8">
+    <style>
+        input {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .submit-form {
+            border-radius: 10%;
+            background-color: blue;
+            color: white;
+        }
+
+        .login-form {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+        }
+        .login-window{
+            margin-top: 20%;
+            margin-left:30%;
+            width: 40%;
+            height: 60%;
+        }
+        .login-or-email{
+            margin-top:10px
+        }
+        .hr{
+            width:50%;
+        }
+        .div-of-login{
+            width: 100%;
+            height: 100%;
+        }
+        .login {
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body style="background-color: gray">
+<div class="login-form">
+    <form action="https://youtube.com/" class="login-window">
+        <div class="div-of-login" style="background-color: white">
+        <div class="login">
+            <h1>
+                Login
+            </h1>
+            <hr class="">
+        </div>
+        <div class="login-or-email">
+            <input type="text" id="fname" placeholder="login  or email" name="fname">
+        </div>
+        <div class="login-or-email">
+            <input type="text" id="lname" placeholder="password" name="lname">
+        </div>
+        <div class="login-or-email">
+            <input class="submit-form" type="submit" value="Отправить">
+        </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
