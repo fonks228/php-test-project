@@ -7,6 +7,29 @@
             border-top: none;
             border-left: none;
             border-right: none;
+            width: 85%;
+            font-size: 20px;
+        }
+
+
+        :focus-visible {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: gray;
+        }
+
+        input:focus {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        input:focus-visible {
+            border-top: none;
+            border-left: none;
+            border-right: none;
         }
 
         .submit-form {
@@ -28,37 +51,46 @@
             height: 60%;
         }
         .login-or-email{
-            margin-top:10px
-        }
-        .hr{
-            width:50%;
+            margin-top:20px;
+            width: 100%;
+            color:gray;
         }
         .div-of-login{
             width: 100%;
             height: 100%;
+            background-color: white;
         }
         .login {
-            padding-top: 50px;
+            padding-top: 25px;
+
+        }
+        .password{
+          margin-top: 30px;
+            color: #b6b6b6;
+        }
+        .enter{
+            margin-top: 50px;
         }
     </style>
 </head>
 <body style="background-color: gray">
 <div class="login-form">
     <form action="https://youtube.com/" class="login-window">
-        <div class="div-of-login" style="background-color: white">
+        <div class="div-of-login">
         <div class="login">
-            <h1>
+            <h1 class="">
                 Login
             </h1>
-            <hr class="">
+            <hr>
+            <br>
         </div>
         <div class="login-or-email">
-            <input type="text" id="fname" placeholder="login  or email" name="fname">
+            <input type="text" id="fname" placeholder="login  or email" name="fname" >
         </div>
-        <div class="login-or-email">
+        <div class="password">
             <input type="text" id="lname" placeholder="password" name="lname">
         </div>
-        <div class="login-or-email">
+        <div class="enter">
             <input class="submit-form" type="submit" value="Отправить">
         </div>
         </div>
